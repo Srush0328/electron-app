@@ -1,13 +1,23 @@
 {
-  "name": "little-calendar",
-  "productName": "Little Calendar",
+  "name": "Calendar",
   "version": "1.0.0",
-  "description": "A minimal Electron calendar app",
   "main": "main.js",
+
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "build": "electron-builder"
   },
+
+  "build": {
+    "appId": "com.srush.calendar",
+    "productName": "Calendar",
+    "win": {
+      "target": "nsis"
+    }
+  },
+
   "devDependencies": {
-    "electron": "^latest"
+    "electron": "44.0.0",
+    "electron-builder": "YOUR_INSTALLED_VERSION"
   }
 }
